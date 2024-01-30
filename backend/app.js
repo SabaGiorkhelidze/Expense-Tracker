@@ -13,7 +13,7 @@ app.use(cors());
 const PORT = 8000;
 
 app.get("/", (request, response) => {
-  console.log(request);
+//   console.log(request);
   return response.status(200).send('hello from main server');
 });
 
