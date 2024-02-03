@@ -4,13 +4,10 @@ import mongoos from "mongoose";
 import apiRoutes from './Routes/api.js'
 const app = express();
 
-const mongodbURL =
-  "mongodb+srv://sabagiorkhelidze:ExpenseTracker@expensetracker.guqhcj8.mongodb.net/?retryWrites=true&w=majority";
 
 app.use(express.json());
 app.use(cors());
 
-const PORT = 8000;
 
 app.get("/", (request, response) => {
 //   console.log(request);
